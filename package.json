@@ -1,0 +1,19 @@
+{
+  "name": "mtg-proxy-print",
+  "version": "1.0.0",
+  "description": "A web application that creates PDFs to print proxy cards for Magic: the Gathering",
+  "keywords": [
+    "mtg",
+    "proxy",
+    "print"
+  ],
+  "license": "ISC",
+  "author": "Gabriel James Benedict",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "workspaces": ["web"]
+}
