@@ -1,0 +1,36 @@
+.root-container {
+
+    background-color: var(--color-primary);
+
+    .header {
+        margin: 0 10vw;
+        height: 4rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: var(--font-family-sans);
+        color: var(--color-background);
+
+        .header__navigation-bar {
+            .navigation-bar__list {
+                display: flex;
+                flex-direction: row;
+
+                list-style: none;
+
+                .list__item {
+                    margin: 0 0.5rem;
+                    padding: 0.5rem 1rem;
+
+                    border-radius: 999px;
+
+                    &:hover {
+                        background-color: var(--color-primary-hover);
+                    }
+                }
+            }
+        }
+    }
+}
