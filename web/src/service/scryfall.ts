@@ -68,12 +68,21 @@ export const getCardByName = async (cardName: string) => {
     return response.data
 }
 
-export const getCardCollection = async (cardIdentifierList: ParsedIndentifier[]) => {
-    const response = await SCRYFALL_API.post(
-        "cards/collection",
-        {
-            identifiers: cardIdentifierList
-        }
-    );
-    return response.data.data
+export const getCardCollection = async (identifierList: ParsedIndentifier[]) => {
+    const chunks: ParsedIndentifier[][] = [];
+    for (let i = 0; i < identifierList.length; i += 75) {
+        chunks.push(identifierList.slice(i, i + 75));
+    }
+    const totalResponse = []
+    for (const chunk of chunks) {
+        const response = await SCRYFALL_API.post(
+            "cards/collection",
+            {
+                identifiers: chunk
+            }
+        );
+        totalResponse.push(...response.data.data);
+        await new Promise((resolve) => setTimeout(resolve, 500)); // IMPORTANT!!! Scryfall has an API rate limit of 500ms between each request
+    }
+    return totalResponse;
 }
