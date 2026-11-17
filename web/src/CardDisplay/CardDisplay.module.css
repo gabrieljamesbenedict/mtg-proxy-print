@@ -19,7 +19,7 @@
             justify-content: center;
             align-content: center;
 
-            transition: translateY 200ms ease-out;
+            transition: transform 200ms ease-out;
             cursor: pointer;
 
             overflow: hidden;
@@ -36,8 +36,21 @@
         }
 
         .cardbox-grid__card-item--input {
-            border-radius: 4.75%;
+            border-width: 2px;
+            border-style: dashed;
             border-color: color-mix(in srgb, gray 60%, transparent);
+            border-radius: 4.75%;
+
+            font-family: var(--font-family-mono);
+            text-align: center;
+            color: gray;
+
+            transition: border-color 200ms ease-out, color 200ms ease-out, transform 200ms ease-out;
+
+            &:hover {
+                border-color: color-mix(in srgb, var(--color-primary) 60%, transparent);
+                color: var(--color-primary);
+            }
         }
     }
 }
