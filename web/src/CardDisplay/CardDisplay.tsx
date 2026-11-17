@@ -1,15 +1,26 @@
+import type { ScryfallCard } from "../service/scryfall";
 import styles from "./CardDisplay.module.css"
 
-const CardDisplay = () => {
+interface CardDisplayProps {
+    cardDisplayList: ScryfallCard[];
+}
+
+const CardDisplay = ({ cardDisplayList }: CardDisplayProps) => {
     return (
         <>
             <div className={styles["root-container"]}>
                 <div className={styles["cardbox-grid"]}>
-                    {Array.from({ length: 10 }).map((_, index) => (
-                    <div key={index} className={styles["cardbox-grid__card-item"]}>
-                        
-                    </div>
-                    ))}
+                    {
+                        cardDisplayList.map(
+                            (card, index) => (
+                                <div key={index} className={styles["cardbox-grid__card-item"]}>
+                                    <h3>{card.name}</h3>
+                                    <p>{card.set ? card.set : ""}</p>
+                                    <p>{card.collector_number ? card.collector_number : ""}</p>
+                                </div>
+                            )
+                        )
+                    }
                     <div className={`${styles["cardbox-grid__card-item"]} ${styles["cardbox-grid__card-item--input"]}`}>
 
                     </div>
