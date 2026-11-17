@@ -1,4 +1,5 @@
-import Header from "./Header/header";
+import Header from "./Header/Header";
+import CardDisplay from "./CardDisplay/CardDisplay";
 
 const App = () => {
     return (
