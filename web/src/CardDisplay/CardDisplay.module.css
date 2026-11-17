@@ -5,13 +5,29 @@
         margin: 0 10vw;
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, 10rem);
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 0.5rem;
 
         .cardbox-grid__card-item {
-            aspect-ratio: 5 / 7;
 
-            /* border: 1px var(--color-primary) dash; */
-            border: 1px blue solid;
+            /* DO NOT CHANGE!!! These are Magic: The Gathering dimensions */
+            aspect-ratio: 5 / 7;
+            border-radius: 4.75%;
+
+            border: 2px dashed color-mix(in srgb, var(--color-primary) 60%, transparent);
+
+            transition: all 200ms ease-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+
+            position: relative;
+        }
+
+        .cardbox-grid__card-item--input {
+            border-color: color-mix(in srgb, gray 60%, transparent);
         }
     }
 }
