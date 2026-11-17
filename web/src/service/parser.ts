@@ -54,3 +54,7 @@ export const parseCardList = (cardList: string): ScryfallCardIdentifier[] => {
     }
     return cardIdentiferList
 }
+
+export const testMethod = () => {
+    alert("Hello World")
+}

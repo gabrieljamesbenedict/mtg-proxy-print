@@ -1,0 +1,85 @@
+1 Memnarch (DST) 129 *F*
+1 Academy Ruins (TSP) 269
+1 Aether Spellbomb (MRD) 141
+1 An Offer You Can't Refuse (SNC) 464
+1 Ancient Tomb (V12) 1 *F*
+1 Arcane Signet (SLD) 589 *F*
+1 Archmage's Charm (H1R) 7 *F*
+1 Basalt Monolith (3ED) 235
+1 Borne Upon a Wind (LTR) 44 *F*
+1 Brainstorm (SLD) 174 *F*
+1 Brainsurge (MH3) 399 *F*
+1 Chromatic Orrery (M21) 228
+1 Chrome Mox (MRD) 152
+1 Copy Artifact (3ED) 53
+1 Counterspell (MMQ) 69
+1 Cyclonic Rift (RTR) 35 *F*
+1 Dress Down (MH2) 39 *F*
+1 Fierce Guardianship (C20) 35
+1 Flooded Strand (KTK) 233
+1 Force of Negation (MH1) 52
+1 Force of Will (ALL) 28
+1 Forensic Gadgeteer (MKM) 57
+1 Geist of Saint Thalia (FRA) 214
+1 Gifts Ungiven (CHK) 62
+1 Gilded Lotus (BRR) 17 *F*
+1 Grand Architect (SOM) 33 *F*
+1 Grim Monolith (ULG) 126
+1 Into the Flood Maw (BLB) 52
+1 Inventors' Fair (KLD) 247
+1 Karn, the Great Creator (WAR) 1
+1 Liquimetal Torque (MH2) 428 *F*
+1 Lórien Revealed (LTR) 60 *F*
+1 Lotus Petal (TMP) 294
+1 Mana Drain (J16) 2 *F*
+1 Mana Vault (3ED) 263
+1 Manifold Key (TSR) 398
+1 Merchant Scroll (HML) 33
+1 Misty Rainforest (MH2) 438
+1 Mox Opal (SOM) 179
+1 Mystic Remora (ICE) 87
+1 Mystic Sanctuary (TSR) 408
+1 Mystical Tutor (DMR) 289 *F*
+1 Narset, Parter of Veils (WAR) 61
+1 Otawara, Soaring City (NEO) 271 *F*
+1 Phantasmal Image (M12) 72
+1 Phyrexian Metamorph (NPH) 42
+1 Polluted Delta (ONS) 321
+1 Pollywog Prodigy (BLC) 50
+1 Ponder (TSR) 315
+1 Power Artifact (ATQ) 11
+1 Preordain (BRC) 92
+1 Rhystic Study (PCY) 45
+1 Rings of Brighthearth (LRW) 259
+1 Sapphire Medallion (TMP) 306
+1 Scalding Tarn (MH2) 439
+1 Scour for Scrap (EOE) 73 *F*
+1 Seat of the Synod (BRC) 198
+1 Sensei's Divining Top (CHK) 268
+1 Silundi Vision / Silundi Isle (ZNR) 80 *F*
+1 Sink into Stupor / Soporific Springs (MH3) 241
+16 Snow-Covered Island (ICE) 371
+1 Sol Ring (3ED) 274
+1 Spellseeker (BBD) 41
+1 Stock Up (SOA) 24
+1 Strip Mine (4ED) 363
+1 Subtlety (H2R) 6 *F*
+1 Swan Song (THS) 65
+1 Tezzeret the Seeker (DDF) 39 *F*
+1 The Mycosynth Gardens (ONE) 256
+1 The One Ring (LTR) 246 *F*
+1 Thieving Skydiver (ZNR) 85 *F*
+1 Thran Dynamo (UDS) 139
+1 Tishana's Tidebinder (LCI) 81 *F*
+1 Tolaria West (FUT) 173
+1 Transmute Artifact (ATQ) 14
+1 Ugin, the Spirit Dragon (M21) 279
+1 Unwinding Clock (BRR) 61
+1 Urn of Godfire (MOM) 266 *F*
+1 Urza, Lord High Artificer (DMR) 296 *F*
+1 Urza's Saga (MH2) 259
+1 Valley Floodcaller (BLB) 308
+1 Vedalken Shackles (5DN) 164
+1 Voltaic Key (USG) 314
+1 Wash Away (VOW) 87 *F*
+1 Whir of Invention (AER) 49
