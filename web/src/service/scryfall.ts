@@ -22,6 +22,10 @@ export interface ScryfallCard {
     colors: string[];
     artist?: string;
 
+    set_name: string;
+    set: string;
+    collector_number: string;
+
     mana_cost?: string;
     oracle_text?: string;
     flavor_text?: string;
@@ -29,6 +33,7 @@ export interface ScryfallCard {
     power?: string;
     toughness?: string;
     loyalty?: string;
+
 
     image_uris?: {
         thumb: string;
