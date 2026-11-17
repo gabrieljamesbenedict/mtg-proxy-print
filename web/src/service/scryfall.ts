@@ -12,6 +12,50 @@ export interface ParsedIndentifier {
     collector_number?: string;
 }
 
+export interface ScryfallCard {
+    id: string;
+    name: string;
+    cmc: number;
+    type_line: string;
+    rarity: string;
+    color_identity: string[];
+    colors: string[];
+    artist?: string;
+
+    mana_cost?: string;
+    oracle_text?: string;
+    flavor_text?: string;
+    
+    power?: string;
+    toughness?: string;
+    loyalty?: string;
+
+    image_uris?: {
+        thumb: string;
+        grid: string;
+        display: string;
+        png: string;
+    };
+
+    card_faces?: {
+        name: string;
+        mana_cost: string;
+        type_line: string;
+        oracle_text?: string;
+        flavor_text?: string;
+        power?: string;
+        toughness?: string;
+        loyalty?: string;
+        artist?: string;
+        image_uris?: {
+            thumb: string;
+            grid: string;
+            display: string;
+            png: string;
+        };
+    }[];
+}
+
 export const getCardByName = async (cardName: string) => {
     const response = await SCRYFALL_API.get(
         "cards/named",
