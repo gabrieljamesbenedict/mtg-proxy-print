@@ -1,8 +1,8 @@
-import type { ParsedIndentifier } from "../service/scryfall";
+import type { ParsedIndentifier, ScryfallCard } from "../service/scryfall";
 import styles from "./CardDisplay.module.css"
 
 interface CardDisplayProps {
-    cardDisplayList: ParsedIndentifier[];
+    cardDisplayList: ScryfallCard[];
 }
 
 const CardDisplay = ({ cardDisplayList }: CardDisplayProps) => {
@@ -12,13 +12,14 @@ const CardDisplay = ({ cardDisplayList }: CardDisplayProps) => {
                 <div className={styles["cardbox-grid"]}>
                     {
                         cardDisplayList.map(
-                            (card, index) => (
-                                <div key={index} className={styles["cardbox-grid__card-item"]}>
-                                    <h3>{card.name}</h3>
-                                    <p>{card.set ? card.set : ""}</p>
-                                    <p>{card.collector_number ? card.collector_number : ""}</p>
-                                </div>
-                            )
+                            (card, index) => {
+                                const gridImageURI = card.image_uris?.grid;
+                                return (
+                                    <div key={index} className={styles["cardbox-grid__card-item"]}>
+                                        <img src={gridImageURI} alt={`${card.name} ${card.set} ${card.collector_number}`} />
+                                    </div>
+                                )
+                            }
                         )
                     }
                     <div className={`${styles["cardbox-grid__card-item"]} ${styles["cardbox-grid__card-item--input"]}`}>
