@@ -6,7 +6,7 @@ const SCRYFALL_API = axios.create({
     baseURL: SCRYFALL_ENDPOINT
 });
 
-export interface ScryfallCard {
+export interface ParsedIndentifier {
     name: string;
     set?: string;
     collector_number?: string;
@@ -24,7 +24,7 @@ export const getCardByName = async (cardName: string) => {
     return response.data
 }
 
-export const getCardCollection = async (cardIdentifierList: ScryfallCard[]) => {
+export const getCardCollection = async (cardIdentifierList: ParsedIndentifier[]) => {
     const response = await SCRYFALL_API.post(
         "cards/collection",
         {

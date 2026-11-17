@@ -4,14 +4,14 @@ import Header from "./Header/Header";
 import CardDisplay from "./CardDisplay/CardDisplay";
 
 import styles from "./App.module.css"
-import type { ScryfallCard } from "./service/scryfall";
+import type { ParsedIndentifier } from "./service/scryfall";
 
 import testDeckTxt from "./service/test_deck.txt?raw"
 import { parseCardList } from "./service/parser";
 
 const App = () => {
 
-    const [cardList, setCardList] = useState<ScryfallCard[]>([])
+    const [cardList, setCardList] = useState<ParsedIndentifier[]>([])
 
     useEffect(() => {
         setCardList(parseCardList(testDeckTxt))

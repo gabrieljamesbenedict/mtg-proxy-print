@@ -1,8 +1,8 @@
-import type { ScryfallCard } from "../service/scryfall";
+import type { ParsedIndentifier } from "../service/scryfall";
 import styles from "./CardDisplay.module.css"
 
 interface CardDisplayProps {
-    cardDisplayList: ScryfallCard[];
+    cardDisplayList: ParsedIndentifier[];
 }
 
 const CardDisplay = ({ cardDisplayList }: CardDisplayProps) => {

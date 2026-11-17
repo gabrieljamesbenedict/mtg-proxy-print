@@ -1,8 +1,8 @@
-import type { ScryfallCard } from "./scryfall";
+import type { ParsedIndentifier } from "./scryfall";
 
-export const parseCardList = (cardList: string): ScryfallCard[] => {
+export const parseCardList = (cardList: string): ParsedIndentifier[] => {
     const cardListArray = cardList.split("\n");
-    const cardIdentiferList: ScryfallCard[] = [];
+    const cardIdentiferList: ParsedIndentifier[] = [];
     for (const card of cardListArray) {
 
         let amount: number;
@@ -41,7 +41,7 @@ export const parseCardList = (cardList: string): ScryfallCard[] => {
         cardSet =               containsUselessData ? cardInfo[cardInfoSize-3] : cardInfo[cardInfoSize-2];
         cardCollectorNumber =   containsUselessData ? cardInfo[cardInfoSize-2] : cardInfo[cardInfoSize-1];
 
-        const cardIdentifier: ScryfallCard = {
+        const cardIdentifier: ParsedIndentifier = {
             name: cardName,
             set: cardSet.substring(1,cardSet.length-1).toLowerCase(),
             collector_number: cardCollectorNumber
