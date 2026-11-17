@@ -1,0 +1,17 @@
+.root-container {
+
+    .cardbox-grid {
+
+        margin: 0 10vw;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 10rem);
+
+        .cardbox-grid__card-item {
+            aspect-ratio: 5 / 7;
+
+            /* border: 1px var(--color-primary) dash; */
+            border: 1px blue solid;
+        }
+    }
+}
