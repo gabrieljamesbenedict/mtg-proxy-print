@@ -4,6 +4,10 @@
   --color-primary-active: #1e40af;
   --color-background: #f8fafc;
   --color-text: #0f172a;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-shadow: rgba(15, 23, 42, 0.1);
+  --color-shadow-strong: rgba(15, 23, 42, 0.15);
 
   --font-family-sans: "Inter", system-ui, sans-serif;
   --font-family-mono: ui-monospace, "Consolas", monospace;

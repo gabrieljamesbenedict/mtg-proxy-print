@@ -3,3 +3,13 @@
     grid-column: 1fr;
     gap: 1rem;
 }
+
+.body-container {
+
+    margin: 0 10vw;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+
+}

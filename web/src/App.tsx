@@ -8,6 +8,7 @@ import { getCardCollection, type ParsedIndentifier, type ScryfallCard } from "./
 
 import testDeckTxt from "./service/test_deck.txt?raw"
 import { parseCardList } from "./service/parser";
+import ControlBar from "./ControlBar/ControlBar";
 
 const App = () => {
 
@@ -24,7 +25,10 @@ const App = () => {
         <>
             <div className={styles["root-container"]}>
                 <Header/>
-                <CardDisplay cardDisplayList={cardList} />
+                <div className={styles["body-container"]}>
+                    <ControlBar/>
+                    <CardDisplay cardDisplayList={cardList} />
+                </div>
             </div>
         </>
     );
